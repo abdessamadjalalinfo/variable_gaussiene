@@ -1,0 +1,9 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from math import sqrt, pi, exp
+
+matrice_aleatoire = np.random.rand(1000,20000)
+sommes = np.sum(matrice_aleatoire,0)
+plot = plt.hist(sommes, bins=100)
+plt.show()
+
